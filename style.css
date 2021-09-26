@@ -1,0 +1,102 @@
+body {
+  background-color: black;
+  overflow: hidden;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.logo {
+  width: 130px;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  margin: 20px;
+  z-index: 2;
+}
+
+.title {
+  margin: 10px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.plantSelect {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  width: 400px;
+  height: 30px;
+  z-index: 2;
+}
+
+#canvas {
+  z-index: 1;
+}
+
+@media only screen and (max-width: 900px) {
+  .header {
+    margin: 5px;
+  }
+  .title {
+    font-size: 5vw;
+  }
+  .logo {
+    width: 20vw;
+  }
+  .plantSelect {
+    top: 2.5vh;
+    right: 1vw;
+    width: 30%;
+    height: 30px;
+  }
+}
+
+#tooltip {
+  position: fixed;
+  border: solid 1px gray;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(37, 37, 37, 0.781);
+  z-index: 3;
+  color: white;
+  display: none;
+  overflow: hidden;
+  padding: 2px;
+}
+
+#tooltip .name {
+  font-size: 20px;
+}
+
+#tooltip .path {
+  font-size: 13px;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    margin: 5px;
+  }
+  .title {
+    font-size: 5vw;
+  }
+  .logo {
+    width: 25vw;
+  }
+  .plantSelect {
+    top: 1.5vh;
+    right: 1vw;
+    width: 30%;
+    height: 30px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
